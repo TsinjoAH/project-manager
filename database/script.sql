@@ -1,9 +1,4 @@
-DROP TABLE IF EXISTS users;
-DROP TABLE IF EXISTS project;
-DROP TABLE IF EXISTS collaborator;
-DROP TABLE IF EXISTS role;
-DROP TABLE IF EXISTS task;
-
+drop owned by manager;
 
 CREATE TABLE users
 (
@@ -35,7 +30,8 @@ CREATE TABLE collaborator
     id         INTEGER PRIMARY KEY NOT NULL,
     project_id INTEGER             NOT NULL references project (id) on delete cascade,
     user_id    integer             NOT NULL references users (id) on delete cascade,
-    role_id    INTEGER             NOT NULL references role (id)
+    role_id    INTEGER             NOT NULL references role (id),
+    status     integer default 0
 );
 
 
