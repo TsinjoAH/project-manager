@@ -9,6 +9,14 @@ CREATE TABLE users
     password VARCHAR(40) NOT NULL
 );
 
+create table users_token
+(
+    token           varchar(40) primary key,
+    expiration_date timestamp not null,
+    validity        boolean   not null default true,
+    user_id         integer   not null references users (id)
+);
+
 CREATE TABLE project
 (
     owner      integer     NOT NULL references users (id) on delete cascade,
