@@ -1,4 +1,4 @@
-package com.management.project.Model.Token;
+package com.management.project.model.token;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Id;
@@ -11,7 +11,7 @@ import java.sql.Timestamp;
 @Setter
 @Getter
 @MappedSuperclass
-public class Token{
+public class Token {
 
     @Id
     private String token;

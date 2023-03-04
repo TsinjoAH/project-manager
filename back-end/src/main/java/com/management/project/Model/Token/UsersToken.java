@@ -1,10 +1,10 @@
-package com.management.project.Model.Token;
+package com.management.project.model.token;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 
 @Entity
-public class UsersToken extends Token{
+public class UsersToken extends Token {
     @Column
     private Long userId;
 

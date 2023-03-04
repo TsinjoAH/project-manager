@@ -1,4 +1,5 @@
-package com.management.project.Model;
+package com.management.project.model;
+
 import custom.springutils.LoginEntity;
 import custom.springutils.model.HasName;
 
@@ -8,16 +9,16 @@ import jakarta.persistence.Table;
 import org.apache.commons.codec.digest.DigestUtils;
 
 @Entity
-@Table(name="users")
+@Table(name = "users")
 public class Users extends HasName implements LoginEntity {
-@Column
-String name;
-@Column
-String contact;
-@Column
-String email;
-@Column
-String password;
+    @Column
+    String name;
+    @Column
+    String contact;
+    @Column
+    String email;
+    @Column
+    String password;
 
     @Override
     public String getName() {
@@ -42,6 +43,7 @@ String password;
     public String getEmail() {
         return email;
     }
+
     public void setEmail(String email) {
         this.email = email;
     }
@@ -50,6 +52,7 @@ String password;
     public String getPassword() {
         return password;
     }
+
     public void setPassword(String password) {
         this.password = DigestUtils.sha1Hex(password);
     }
