@@ -1,8 +1,8 @@
-package com.management.project.Controller;
+package com.management.project.controller;
 
-import com.management.project.Model.Users;
-import com.management.project.Services.UsersServices.UsersCrudServices;
-import com.management.project.Services.UsersServices.UsersLoginServices;
+import com.management.project.model.Users;
+import com.management.project.Services.UsersCrudServices;
+import com.management.project.Services.UsersLoginServices;
 import custom.springutils.controller.LoginController;
 import custom.springutils.exception.CustomException;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,10 +13,13 @@ import org.springframework.web.bind.annotation.*;
 import static custom.springutils.util.ControllerUtil.returnSuccess;
 
 @RestController
-@RequestMapping("/users")
+@RequestMapping("users")
 public class UsersController extends LoginController<Users, UsersLoginServices> {
+
+
     @Autowired
     UsersCrudServices servicesusers;
+
     public UsersController(UsersLoginServices service) {
         super(service);
     }
@@ -25,8 +28,9 @@ public class UsersController extends LoginController<Users, UsersLoginServices> 
     public String getRequestHeaderKey() {
         return "users_token";
     }
+
     @PostMapping
-    public ResponseEntity<?> signup (@RequestBody Users user) throws CustomException{
+    public ResponseEntity<?> signup(@RequestBody Users user) throws CustomException {
         return returnSuccess(this.servicesusers.create(user), HttpStatus.OK);
     }
 }

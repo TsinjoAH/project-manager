@@ -48,7 +48,8 @@
     "project.structure.last.edited": "Artifacts",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.43678162",
-    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices"
+    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices",
+    "spring.configuration.checksum": "46f86faa6bbf9ac94a7e459509a20ed0"
   },
   "keyToStringList": {
     "DatabaseDriversLRU": [
@@ -79,7 +80,8 @@
       <option name="presentableId" value="Default" />
       <updated>1677730166849</updated>
       <workItem from="1677730259873" duration="192000" />
-      <workItem from="1677772775042" duration="8113000" />
+      <workItem from="1677772775042" duration="8713000" />
+      <workItem from="1677900076989" duration="7484000" />
     </task>
     <servers />
   </component>

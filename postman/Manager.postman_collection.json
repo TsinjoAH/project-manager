@@ -13,7 +13,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"name\":\"lahatra\",\r\n    \"contact\":\"0321915940\",\r\n    \"email\":\"lahatra@gmail.com\",\r\n    \"password\":\"1227\"\r\n}",
+					"raw": "{\r\n    \"name\":\"a\",\r\n    \"contact\":\"0321915940\",\r\n    \"email\":\"lahatra@gmail.com\",\r\n    \"password\":\"1227\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -21,13 +21,9 @@
 					}
 				},
 				"url": {
-					"raw": "localhost:8080/users",
+					"raw": "{{baseUrl}}users",
 					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"users"
+						"{{baseUrl}}users"
 					]
 				}
 			},
@@ -48,13 +44,11 @@
 					}
 				},
 				"url": {
-					"raw": "localhost:8080/users/login",
+					"raw": "{{baseUrl}}users/login",
 					"host": [
-						"localhost"
+						"{{baseUrl}}users"
 					],
-					"port": "8080",
 					"path": [
-						"users",
 						"login"
 					]
 				}
@@ -64,22 +58,20 @@
 		{
 			"name": "Logout",
 			"request": {
-				"method": "POST",
+				"method": "DELETE",
 				"header": [
 					{
 						"key": "users_token",
-						"value": "c7a019077b620bc6bffcdbb5b61ee8e22fa9f896",
+						"value": "dbc7086efc948a0fc5bfc3bfbad964401dc6647b",
 						"type": "text"
 					}
 				],
 				"url": {
-					"raw": "localhost:8080/users/logout",
+					"raw": "{{baseUrl}}users/logout",
 					"host": [
-						"localhost"
+						"{{baseUrl}}users"
 					],
-					"port": "8080",
 					"path": [
-						"users",
 						"logout"
 					]
 				}

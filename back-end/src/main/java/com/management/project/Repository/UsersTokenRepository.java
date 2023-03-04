@@ -1,6 +1,6 @@
-package com.management.project.Repository;
+package com.management.project.repository;
 
-import com.management.project.Model.Token.UsersToken;
+import com.management.project.model.token.UsersToken;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface UsersTokenRepository extends JpaRepository<UsersToken, String> {
