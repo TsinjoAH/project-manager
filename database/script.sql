@@ -19,7 +19,7 @@ create table users_token
 
 CREATE TABLE project
 (
-    owner      integer     NOT NULL references users (id) on delete cascade,
+    owner_id      integer     NOT NULL references users (id) on delete cascade,
     id         serial PRIMARY KEY,
     title      VARCHAR(40) NOT NULL,
     start_date TIMESTAMP   NOT NULL,

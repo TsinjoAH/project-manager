@@ -77,6 +77,33 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "Create project",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\":\"Essaie\",\r\n    \"start_date\":\"2023-03-04\",\r\n    \"end_date0:\"2023-03-05\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseUrl}}users/1/project",
+					"host": [
+						"{{baseUrl}}users"
+					],
+					"path": [
+						"1",
+						"project"
+					]
+				}
+			},
+			"response": []
 		}
 	]
 }
