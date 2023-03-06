@@ -1,9 +1,9 @@
-package com.management.project.services;
+package com.management.project.Services;
 
-import com.management.project.model.Project;
-import com.management.project.model.Users;
-import com.management.project.repository.ProjectRepository;
-import com.management.project.repository.UsersRepository;
+import com.management.project.Model.Project;
+import com.management.project.Model.Users;
+import com.management.project.Repository.ProjectRepository;
+import com.management.project.Repository.UsersRepository;
 import custom.springutils.exception.CustomException;
 import custom.springutils.service.CrudServiceWithFK;
 import org.springframework.stereotype.Service;

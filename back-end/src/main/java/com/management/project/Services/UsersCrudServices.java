@@ -1,7 +1,7 @@
-package com.management.project.services;
+package com.management.project.Services;
 
-import com.management.project.model.Users;
-import com.management.project.repository.UsersRepository;
+import com.management.project.Model.Users;
+import com.management.project.Repository.UsersRepository;
 import custom.springutils.service.CrudService;
 import org.springframework.stereotype.Service;
 

@@ -1,8 +1,8 @@
-package com.management.project.services.task;
+package com.management.project.Services.task;
 
-import com.management.project.model.Users;
-import com.management.project.model.task.Task;
-import com.management.project.repository.TaskRepository;
+import com.management.project.Model.Users;
+import com.management.project.Model.task.Task;
+import com.management.project.Repository.TaskRepository;
 import custom.springutils.exception.CustomException;
 import custom.springutils.service.CrudServiceWithFK;
 import jakarta.transaction.Transactional;

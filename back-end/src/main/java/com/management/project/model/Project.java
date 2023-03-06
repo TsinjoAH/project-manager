@@ -1,4 +1,4 @@
-package com.management.project.model;
+package com.management.project.Model;
 
 import custom.springutils.exception.CustomException;
 import custom.springutils.model.HasFK;

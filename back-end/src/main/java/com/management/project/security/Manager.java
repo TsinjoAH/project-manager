@@ -1,4 +1,4 @@
-package com.management.project.security;
+package com.management.project.Security;
 
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.core.Authentication;

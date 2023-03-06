@@ -1,9 +1,9 @@
-package com.management.project.services;
+package com.management.project.Services;
 
-import com.management.project.model.token.UsersToken;
-import com.management.project.model.Users;
-import com.management.project.repository.UsersRepository;
-import com.management.project.repository.UsersTokenRepository;
+import com.management.project.Model.token.UsersToken;
+import com.management.project.Model.Users;
+import com.management.project.Repository.UsersRepository;
+import com.management.project.Repository.UsersTokenRepository;
 import custom.springutils.exception.CustomException;
 import custom.springutils.service.LoginService;
 import org.springframework.beans.factory.annotation.Autowired;

@@ -1,6 +1,6 @@
-package com.management.project.repository;
+package com.management.project.Repository;
 
-import com.management.project.model.Users;
+import com.management.project.Model.Users;
 import custom.springutils.LoginRepo;
 import org.springframework.data.jpa.repository.JpaRepository;
 

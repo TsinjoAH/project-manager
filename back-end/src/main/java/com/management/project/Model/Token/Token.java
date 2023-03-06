@@ -1,4 +1,4 @@
-package com.management.project.model.token;
+package com.management.project.Model.token;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Id;

@@ -1,7 +1,7 @@
-package com.management.project.model.task;
+package com.management.project.Model.task;
 
-import com.management.project.model.Project;
-import com.management.project.model.Users;
+import com.management.project.Model.Project;
+import com.management.project.Model.Users;
 import custom.springutils.exception.CustomException;
 import custom.springutils.model.HasFK;
 import jakarta.persistence.Column;

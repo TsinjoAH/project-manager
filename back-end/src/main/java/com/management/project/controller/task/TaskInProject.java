@@ -1,7 +1,7 @@
-package com.management.project.controller.task;
+package com.management.project.Controller.task;
 
-import com.management.project.model.task.Task;
-import com.management.project.services.task.TaskListService;
+import com.management.project.Model.task.Task;
+import com.management.project.Services.task.TaskListService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

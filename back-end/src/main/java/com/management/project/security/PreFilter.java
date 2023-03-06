@@ -1,4 +1,4 @@
-package com.management.project.security;
+package com.management.project.Security;
 
 import jakarta.servlet.http.HttpServletRequest;
 import org.springframework.security.web.authentication.preauth.AbstractPreAuthenticatedProcessingFilter;

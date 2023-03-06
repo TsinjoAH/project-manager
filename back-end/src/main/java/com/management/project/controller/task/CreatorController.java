@@ -1,9 +1,9 @@
-package com.management.project.controller.task;
+package com.management.project.Controller.task;
 
-import com.management.project.services.ProjectServices;
-import com.management.project.services.task.TaskCreatorService;
-import com.management.project.model.Project;
-import com.management.project.model.task.Task;
+import com.management.project.Services.ProjectServices;
+import com.management.project.Services.task.TaskCreatorService;
+import com.management.project.Model.Project;
+import com.management.project.Model.task.Task;
 import custom.springutils.util.SuccessResponse;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
