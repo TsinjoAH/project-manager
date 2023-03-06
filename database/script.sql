@@ -41,8 +41,6 @@ CREATE TABLE collaborator
     role_id    INTEGER             NOT NULL references role (id),
     status     integer default 0
 );
-
-
 CREATE TABLE task
 (
     id          serial PRIMARY KEY,
@@ -51,7 +49,7 @@ CREATE TABLE task
     description VARCHAR(255) NOT NULL,
     start_date  TIMESTAMP    NOT NULL,
     end_date    TIMESTAMP    NOT NULL,
-    super_id    INTEGER references task (id),
+    supere_id    INTEGER references task (id),
     status      INTEGER      NOT NULL DEFAULT 0,
     task_order  INTEGER      NOT NULL
 );

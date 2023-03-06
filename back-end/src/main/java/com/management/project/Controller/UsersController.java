@@ -1,8 +1,8 @@
 package com.management.project.controller;
 
 import com.management.project.model.Users;
-import com.management.project.Services.UsersCrudServices;
-import com.management.project.Services.UsersLoginServices;
+import com.management.project.services.UsersCrudServices;
+import com.management.project.services.UsersLoginServices;
 import custom.springutils.controller.LoginController;
 import custom.springutils.exception.CustomException;
 import org.springframework.beans.factory.annotation.Autowired;

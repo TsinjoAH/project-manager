@@ -1,4 +1,4 @@
-package com.management.project.Services;
+package com.management.project.services;
 
 import com.management.project.model.Users;
 import com.management.project.repository.UsersRepository;
@@ -10,6 +10,7 @@ public class UsersCrudServices extends CrudService<Users, UsersRepository> {
     public UsersCrudServices(UsersRepository repo) {
         super(repo);
     }
+
     @Override
     public int getPageSize() {
         return 0;

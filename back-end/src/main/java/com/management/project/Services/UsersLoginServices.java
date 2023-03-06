@@ -1,4 +1,4 @@
-package com.management.project.Services;
+package com.management.project.services;
 
 import com.management.project.model.token.UsersToken;
 import com.management.project.model.Users;
@@ -44,8 +44,7 @@ public class UsersLoginServices extends LoginService<Users, UsersRepository> {
         token.setExpirationDate(Timestamp.valueOf(LocalDateTime.now().plusDays(7)));
         try {
             tokenRepo.save(token);
-        }
-        catch (Throwable e) {
+        } catch (Throwable e) {
             throw e;
         }
     }
